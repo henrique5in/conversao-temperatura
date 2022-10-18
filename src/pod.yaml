@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: converterpod
+spec:
+  containers:
+  - name: site
+    image: henriquer/temperature-converter:latest
+    ports:
+    - containerPort: 8080
